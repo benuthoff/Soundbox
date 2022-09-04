@@ -9,7 +9,7 @@ const server = require('http').createServer(app);
 const port = 666;
 
 // Run Web Server.
-app.use(express.static('src'));
+app.use(express.static('docs'));
 server.listen(port, () => {
 	console.log('listening on *:'+port);
 });
