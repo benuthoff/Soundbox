@@ -1,0 +1,62 @@
+/* Soundbar Style */
+
+body {
+	background-image: url('./background.jpg');
+	background-size: cover;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	user-select: none;
+}
+
+h1 {
+
+	color: #ffffffcc;
+	background: #423c5a80;
+	box-shadow: 0 10px 15px rgb(0 0 0 / 30%);
+	margin: 20px; padding: 30px 50px;
+	border-radius: 12px;
+	backdrop-filter: blur(33px);
+
+	display: inline-block;
+
+}
+
+#grid {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: space-around;
+
+	& > .box {
+		flex-grow: 1;
+		flex: none;
+
+		width: 60px !important;
+		height: 60px !important;
+
+		color: #ffffffcc;
+		background: #423c5a80;
+		box-shadow: 0 10px 15px #0000004d;
+		margin: 20px; padding: 30px;
+		border-radius: 12px;
+		backdrop-filter: blur(33px);
+		transition: 0.1s;
+
+		display: flex;
+		text-align: center;
+		align-items: center;
+
+		font-weight: bold;
+		font-size: 20px;
+
+		&:active {
+			box-shadow: 0 5px 15px #0000004d;
+			transform: translateY(5px);
+		}
+
+		p { margin: 0; }
+
+	}
+
+}
