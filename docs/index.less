@@ -8,10 +8,12 @@ body {
 	touch-action: manipulation;
 }
 
+@button-color: #53776f5a;
+
 h1 {
 
 	color: #ffffffcc;
-	background: #423c5a80;
+	background: @button-color;
 	box-shadow: 0 10px 15px #0000004d;
 	margin: 20px; padding: 30px 50px;
 	border-radius: 12px;
@@ -21,6 +23,8 @@ h1 {
 	display: inline-block;
 
 }
+
+
 
 #grid {
 
@@ -38,7 +42,7 @@ h1 {
 		height: 80px;
 
 		color: #ffffffcc;
-		background: #423c5a80;
+		background: @button-color;
 		box-shadow: 0 10px 15px #0000004d;
 		margin: 20px; padding: 20px;
 		border-radius: 12px;
