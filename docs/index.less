@@ -5,13 +5,14 @@ body {
 	background-size: cover;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	user-select: none;
+	touch-action: manipulation;
 }
 
 h1 {
 
 	color: #ffffffcc;
 	background: #423c5a80;
-	box-shadow: 0 10px 15px rgb(0 0 0 / 30%);
+	box-shadow: 0 10px 15px #0000004d;
 	margin: 20px; padding: 30px 50px;
 	border-radius: 12px;
 	backdrop-filter: blur(24px);
@@ -60,6 +61,34 @@ h1 {
 
 		p { margin: 0; }
 
+	}
+
+}
+
+@media (max-width:500px) {
+
+	body {
+		margin: 24px;
+		background-size: 160vw 160vh;
+		background-position: center;
+	}
+
+	h1 {
+		width: calc(100vw - 148px);
+		margin: 0;
+		text-align: center;
+	}
+
+	#grid {
+		margin-top: 40px;
+		gap: 40px;
+		justify-content: space-between;
+	}
+	#grid > .box {
+		margin: 0;
+		width: 120px;
+		height: 120px;
+		font-size: 32px;
 	}
 
 }
